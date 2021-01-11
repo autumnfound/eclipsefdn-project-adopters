@@ -6,7 +6,8 @@
 FROM fabric8/java-alpine-openjdk11-jre
 
 # add mvn, npm, nodejs, hugo
-RUN apk add --update --no-cache\
+RUN apk add -U --upgrade --no-cache\
+  nghttp2 \
   npm \
   nodejs \
   maven \
